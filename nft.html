@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Persona x GIRL NFT</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .nft-img {
+      flex: 1 1 300px;
+    }
+    .nft-img img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .nft-info {
+      flex: 2 1 400px;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #ffe6f0;
+      color: #d63384;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .nft-info h1 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+    .description {
+      margin: 16px 0;
+    }
+    .progress-wrapper {
+      margin: 20px 0;
+    }
+    .progress-bar {
+      background-color: #e6e6e6;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 14px;
+    }
+    .progress-bar-inner {
+      height: 100%;
+      width: 70%;
+      background-color: #d63384;
+    }
+    .claim-button {
+      margin-top: 20px;
+    }
+    button {
+      background-color: #d63384;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b3276e;
+    }
+    .edition {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .grid-card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+    }
+    .grid-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .grid-card p {
+      margin: 8px 0 4px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 16px;
+      }
+      .top-section {
+        flex-direction: column;
+      }
+      .nft-info h1 {
+        font-size: 22px;
+      }
+      button {
+        width: 100%;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-section">
+      <div class="nft-img">
+        <img src="source/image.jpg" alt="NFT Persona" />
+      </div>
+      <div class="nft-info">
+        <span class="badge">Persona x GIRL</span>
+        <h1>GIRL Edition #001 - "Neo Dreamer"</h1>
+        <div class="description">
+          <p><strong>Exclusive NFT release</strong> from the collaboration between Persona TechWear and GIRL collective. Every NFT unlocks AR-powered fashion experience and proof of ownership for the limited "Neo Dreamer" physical shirt.</p>
+        </div>
+        <div class="progress-wrapper">
+          <p>Claimed: <strong>70%</strong> (17/24 pieces)</p>
+          <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+          </div>
+        </div>
+        <div class="edition">Edition: 1 of 24</div>
+        <div class="claim-button">
+          <button onclick="alert('NFT berhasil diklaim!')">Claim NFT</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <h3>Patch NFT Designs</h3>
+      <div class="grid">
+        <div class="grid-card"><img src="source/image.jpg" alt="Patch NFT"/><p>Neo Patch Red</p><small>Qty: 6</small></div>
+        <div class="grid-card"><img src="source/image.jpg" alt="Patch NFT"/><p>Neo Patch Black</p><small>Qty: 6</small></div>
+        <div class="grid-card"><img src="source/image.jpg" alt="Patch NFT"/><p>Neo Patch White</p><small>Qty: 6</small></div>
+        <div class="grid-card"><img src="source/image.jpg" alt="Patch NFT"/><p>Neo Patch Purple</p><small>Qty: 6</small></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
